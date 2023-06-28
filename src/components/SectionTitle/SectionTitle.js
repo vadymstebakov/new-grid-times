@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { QUERIES } from '../../constants';
 import styled from 'styled-components/macro';
 
 const SectionTitle = ({ children, cornerLink }) => {
@@ -26,6 +26,10 @@ const Title = styled.h2`
   font-weight: var(--font-weight-bold);
   font-size: 1.5rem;
   margin-bottom: 1rem;
+
+    @media ${QUERIES.tabletAndUp} {
+        margin-bottom: 1.5rem;
+    }
 `;
 
 const CornerLink = styled.a`
